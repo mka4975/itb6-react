@@ -1,0 +1,15 @@
+.container {
+  margin-top: 40px;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+#tab-view {
+  padding: 20px 0;
+}
+
+.list-group-item {
+  cursor: pointer;
+}

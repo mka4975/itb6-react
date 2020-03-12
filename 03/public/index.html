@@ -9,12 +9,23 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link href="./main.css" rel="stylesheet" />
 
     <script src="./main.js" defer></script>
   </head>
   <body>
     <div class="container">
       <h1>Message board</h1>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <div class="nav-link" id="messages-link">Messages</div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link" id="add-new-message-link">Add new message</div>
+        </li>
+      </ul>
+
+      <div id="tab-view"></div>
     </div>
   </body>
 </html>
