@@ -6,7 +6,7 @@
     "lint": "eslint --ext .tsx src",
     "build": "webpack -p",
     "watch": "webpack --watch -d",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc src/**.ts src/**.tsx --jsx react --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
