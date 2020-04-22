@@ -1,5 +1,5 @@
 import * as React from "react";
-import GifContainer from "../shared/GifContainer";
+import GifContainer from "./GifContainer";
 import styled from "styled-components";
 
 interface PropTypes {
@@ -32,12 +32,11 @@ const GifView = ({
   const onSubmit = (event: any): void => {
     event.preventDefault();
 
-    setPage(event.target.currentPage.value);
+    setPage(parseInt(event.target.currentPage.value));
+    event.target.currentPage.value = "";
   };
 
-  return loading ? (
-    <div>Loading ...</div>
-  ) : (
+  return (
     <>
       <PaginationContainer>
         <button onClick={lastPage}>Last page</button>
@@ -51,9 +50,15 @@ const GifView = ({
         / {numberOfPages}
         <button onClick={nextPage}>next page</button>
       </PaginationContainer>
-      {items.map((item: Gif) => (
-        <GifContainer key={item.id} gif={item} />
-      ))}
+      {loading ? (
+        <div>Loading ...</div>
+      ) : (
+        <>
+          {items.map((item: Gif) => (
+            <GifContainer key={item.id} gif={item} />
+          ))}
+        </>
+      )}
     </>
   );
 };

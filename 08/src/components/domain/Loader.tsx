@@ -21,9 +21,8 @@ class Loader {
       .then((res) => {
         this.items = res.data;
         this.loading = false;
-        this.numberOfPages = Math.floor(
-          res.pagination.total_count / this.limit
-        );
+        this.numberOfPages =
+          Math.floor(res.pagination.total_count / this.limit) + 1;
       });
   };
 
