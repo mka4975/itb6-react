@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "noImplicitAny": true,
+        "jsx": "preserve",
+        "lib": ["es2015", "dom"],
+        "target": "es5",
+        "skipLibCheck": true,
+        "experimentalDecorators": true
+    },
+    "include": [
+        "assets/**/*",
+        "src/**/*"
+    ]
+}
