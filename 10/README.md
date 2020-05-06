@@ -19,6 +19,8 @@ npm start # Start webpack in watch/development mode
 npm run build # Build main.js for production
 
 npm run test # Run the jest tests including a coverage report
+
+npm run nightwatch # Run the nightwatch end to end tests
 ```
 
 To check the result of the build just open the `localhost:8080` in your
