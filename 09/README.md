@@ -28,5 +28,5 @@ npm start # Start webpack in watch/development mode
 npm run build # Build main.js for production
 ```
 
-To check the result of the build just open the `public/index.html` file in your
+To check the result of the build just open the `localhost:8080` in your
 browser.
